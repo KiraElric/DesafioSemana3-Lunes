@@ -1,13 +1,13 @@
-<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to 'Navbar', root_path, class: 'nav-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-link active" href="pages_one_path">One</a>
-      <a class="nav-link" href="pages_two_path">Two</a>
-      <a class="nav-link" href="pages_three_path">Three</a>
+      <%= link_to 'One', root_path, class: 'nav-link' %>
+      <%= link_to 'Two', pages_two_path, class: 'nav-link' %>
+      <%= link_to 'Three', pages_three_path, class: 'nav-link' %>
     </div>
   </div>
 </nav>
